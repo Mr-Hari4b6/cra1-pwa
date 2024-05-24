@@ -1,5 +1,3 @@
-/* eslint-disable no-restricted-globals */
-
 import { clientsClaim } from 'workbox-core';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
@@ -71,5 +69,3 @@ self.addEventListener('message', (event) => {
     self.skipWaiting();
   }
 });
-
-// Any other custom service worker logic can go here.
